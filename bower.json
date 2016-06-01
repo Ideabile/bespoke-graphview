@@ -1,0 +1,11 @@
+{
+  "name": "bespoke-graphview",
+  "version": "1.0.0",
+  "main": "./dist/bespoke-graphview.js",
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {
+    "bespoke.js": ">=1.0.0"
+  }
+}
