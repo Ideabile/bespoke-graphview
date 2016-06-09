@@ -17,10 +17,21 @@
     top: 0;
 }
 
-.bespoke-graphview--graph svg g path{
-    stroke: #ccc !important;
+.bespoke-graphview--graph svg g path,
+.bespoke-graphview--graph svg g circle,
+.bespoke-graphview--graph svg g rect,
+.bespoke-graphview--graph svg g polygon,
+.bespoke-graphview--graph svg g line
+{
+    stroke: #EFEFEF !important;
 }
 
-.bespoke-graphview--graph svg g.focus path{
+
+.bespoke-graphview--graph svg g.focus path,
+.bespoke-graphview--graph svg g.focus circle,
+.bespoke-graphview--graph svg g.focus rect,
+.bespoke-graphview--graph svg g.focus polygon,
+.bespoke-graphview--graph svg g.focus line
+ {
     stroke: #000 !important;
 }
