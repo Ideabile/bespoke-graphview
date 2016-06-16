@@ -1,5 +1,5 @@
 .diagram li{
-    display: none;
+    visibility: hidden;
 }
 
 .diagram li:before{
@@ -7,7 +7,8 @@
 }
 
 .diagram li.active{
-    display: block;
+    position: absolute;
+    visibility: visible;
 }
 .bespoke-graphview--graph svg{
     position: absolute;
