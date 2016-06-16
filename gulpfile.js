@@ -55,8 +55,9 @@ gulp.task('coveralls', ['test'], function() {
 });
 
 gulp.task('compile', ['clean'], function() {
-  return browserify('./lib/bespoke-graphview.js')
-    .bundle({ standalone: 'bespoke.plugins.graphview' })
+  return browserify({ standalone: 'bespoke.plugins.graphview' })
+    .add('./lib/bespoke-graphview.js')
+    .bundle()
     .pipe(source('bespoke-graphview.js'))
     .pipe(buffer())
     .pipe(header(template([
@@ -70,7 +71,6 @@ gulp.task('compile', ['clean'], function() {
     ].join('\n'), pkg)))
     .pipe(gulp.dest('dist'))
     .pipe(rename('bespoke-graphview.min.js'))
-    .pipe(uglify())
     .pipe(header(template([
       '/*! <%= name %> v<%= version %> ',
       '© <%= new Date().getFullYear() %> <%= author.name %>, ',

@@ -32,6 +32,6 @@
 .bespoke-graphview--graph svg g.focus rect,
 .bespoke-graphview--graph svg g.focus polygon,
 .bespoke-graphview--graph svg g.focus line
- {
+{
     stroke: #000 !important;
 }
