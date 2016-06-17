@@ -22,9 +22,10 @@
 .bespoke-graphview--graph svg g circle,
 .bespoke-graphview--graph svg g rect,
 .bespoke-graphview--graph svg g polygon,
-.bespoke-graphview--graph svg g line
+.bespoke-graphview--graph svg g line,
+.bespoke-graphview--graph svg g ellipse
 {
-    stroke: #EFEFEF !important;
+     opacity: 0.1;
 }
 
 
@@ -32,7 +33,8 @@
 .bespoke-graphview--graph svg g.focus circle,
 .bespoke-graphview--graph svg g.focus rect,
 .bespoke-graphview--graph svg g.focus polygon,
-.bespoke-graphview--graph svg g.focus line
+.bespoke-graphview--graph svg g.focus line,
+.bespoke-graphview--graph svg g.focus ellipse
 {
-    stroke: #000 !important;
+     opacity: 1;
 }
